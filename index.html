@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #e0e0e0; /* Cor inicial do fundo */
+      transition: background-color 0.5s ease; /* Transição suave da cor do fundo */
+    }
+
+    body:hover {
+      background-color: #b0b0b0; /* Cor do fundo mais escura ao passar o mouse */
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      background-color: black;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      color: white;
+      border-radius: 30px;
+    }
+
+    .left {
+      flex: 1;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-image: url("./gatoPerfil.jpg"); /* Substitua pelo caminho da sua foto */
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 20px;
+      border-color: white;
+    }
+
+    .left-top {
+      text-align: center;
+    }
+
+    .left-bottom {
+      margin-top: auto; /* Para empurrar a seção para o final da coluna */
+    }
+
+    .right {
+      flex: 2;
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    h1,
+    h2 {
+      margin-top: 0;
+      color: white;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="photo"></div>
+      <div class="left-top">
+        <p>Kenzo Ruthes dos Santos</p>
+        <p>kenzoruthessantos@gmail.com</p>
+      </div>
+      <div class="left-bottom">
+        <h2>Tecnologias</h2>
+        <p>html</p>
+        <p>css</p>
+        <p>js</p>
+        <p>JSON</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="section">
+        <h2>Sobre mim</h2>
+        <p>
+          Eu adoro jogos, estudos sobrenaturais, ou coisas interessantes e
+          aleatórias. Adoro animes como Demon Slayer, Jujutsu Kaisen, One Piece
+          e etc.
+        </p>
+      </div>
+      <div class="section">
+        <h2>Escolaridade</h2>
+        <p><strong>Nível de estudante</strong> - Intermediário</p>
+        <p>
+          Vou bem em muitos conteúdos da escola, tiro muitas notas boas, porém
+          estou decaindo em português e também em matemática.
+        </p>
+      </div>
+      <div class="section">
+        <h2>Conhecimento</h2>
+        <p>
+          <strong>Médio</strong> - <strong>exceto com fatos aleatórios</strong>
+        </p>
+        <p>
+          Eu tenho um conhecimento médio, mas quando se trata de fatos
+          aleatórios, meu nível de conhecimento é alto/excelente.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
